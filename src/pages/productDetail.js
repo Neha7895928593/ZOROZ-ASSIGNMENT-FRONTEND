@@ -11,9 +11,21 @@ const ProductDetail = () => {
 
     useEffect(() => {
         const fetchProduct = async () => {
-            const response = await axios.get(`http://localhost:5000/api/products/${id}`);
-            setProduct(response.data);
+            try {
+                const response = await axios.get(`http://localhost:5000/api/products/${id}`);
+                setProduct(response.data);
+            } catch (error) {
+                console.error('Error fetching from local server:', error);
+                try {
+                    const response = await axios.get(`https://zoroz-assignment-backend.onrender.com/api/products/${id}`);
+                    setProduct(response.data);
+                } catch (error) {
+                    console.error('Error fetching from remote server:', error);
+                    
+                }
+            }
         };
+
         fetchProduct();
     }, [id]);
 
@@ -22,7 +34,7 @@ const ProductDetail = () => {
         navigate('/checkout'); 
     };
 
-    if (!product) return <div>Loading...</div>;
+    if (!product) return <div>Loading...</div>; 
 
     return (
         <div className="container mx-auto p-5">
