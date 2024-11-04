@@ -48,7 +48,7 @@ const CategoryProducts = () => {
                             <img src={product.image} alt={product.name} className="w-full h-48 object-contain rounded mt-4" />
                             <h3 className="text-lg font-semibold">{product.name}</h3>
                             <p className="text-gray-600">{product.description}</p>
-                            <p className="text-xl font-bold">{product.price.toFixed(2)}</p>
+                            <p className="text-xl font-bold">₹ {product.price.toFixed(2)}</p>
                             <Link to={`/products/${product.id}`} className="bg-blue-500 text-white p-2 rounded mt-2 inline-block">View Details</Link>
                             <button onClick={() => handleAddToCart(product)} className="bg-green-500 text-white p-2 rounded mt-2 inline-block">Add to Cart & Checkout</button>
                         </div>
