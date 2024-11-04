@@ -46,3 +46,16 @@ Open your browser and go to http://localhost:3000 to view the application.
 ### Live-Link
 https://zoroz-assignment-frontend.vercel.app/   
 ## Note- I  have used free server so it will delay response please check at local
+
+### Preview ........................
+
+![image](https://github.com/user-attachments/assets/bdfbd90d-c0f7-40bc-905a-edfb75f20d87)
+![image](https://github.com/user-attachments/assets/c4bcf8f1-4fd6-42d9-8b84-33f77556bff3)
+![image](https://github.com/user-attachments/assets/8a6ff2ec-5848-4134-a8ee-94ef387e38d0)
+![image](https://github.com/user-attachments/assets/a655848d-aa68-4e40-983a-3cd5e8ef9d40)
+![image](https://github.com/user-attachments/assets/539e3d5a-ffe5-46f4-856b-4e50fc3291ce)
+
+
+
+
+
