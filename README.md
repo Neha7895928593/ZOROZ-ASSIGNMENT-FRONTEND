@@ -34,7 +34,7 @@ Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.co
    git clone https://github.com/Neha7895928593/ZOROZ-ASSIGNMENT-FRONTEND
 ## Navigate to the project directory:
 
-cd zoroz
+cd ZOROZ-ASSIGNMENT-FRONTEND
 ## Install dependencies:
 npm install
 
