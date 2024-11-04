@@ -26,12 +26,12 @@ const Checkout = () => {
                         {state.items.map((item) => (
                             <li key={item.id} className="flex justify-between p-2 border-b">
                                 <span>{item.name}</span>
-                                <span>{item.price.toFixed(2)}</span>
+                                <span>₹{item.price.toFixed(2)}</span>
                             </li>
                         ))}
                     </ul>
                     <div className="flex justify-between mt-4">
-                        <h2 className="text-xl font-bold">Total: {state.items.reduce((acc, item) => acc + item.price, 0).toFixed(2)}</h2>
+                        <h2 className="text-xl font-bold">Total ₹{state.items.reduce((acc, item) => acc + item.price, 0).toFixed(2)}</h2>
                         <div>
                             <button onClick={handleCheckout} className="bg-blue-500 text-white p-2 rounded">Proceed to Payment</button>
                             <button onClick={handleClearCart} className="bg-red-500 text-white p-2 rounded ml-2">Clear Cart</button>
